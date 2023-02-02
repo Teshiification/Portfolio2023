@@ -14,7 +14,7 @@ module.exports = {
                     gray: '#485563',
                     black: '#29323C',
                 },
-                body: 'vicious-black',
+                body: '#29323C',
             },
             gradientColorStops: {
                 arendelle:

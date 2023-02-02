@@ -5,14 +5,16 @@
     "scripts": {
         "start": "next start",
         "lint": "next lint",
-        "dev": "concurrently \"next dev -p 1337 --turbo\" \"tailwindcss --input ./app/globals.css --output ./app/output.css --watch\"",
+        "dev": "concurrently \"next dev -p 1337 \" \"tailwindcss --input ./app/globals.css --output ./app/output.css --watch\"",
         "build": "tailwindcss ./app/globals.css --output ./app/output.css && next build"
     },
     "dependencies": {
+        "chart.js": "^4.2.0",
         "concurrently": "^7.6.0",
         "next": "13.0.6",
         "pocketbase": "^0.8.3",
         "react": "18.2.0",
+        "react-chartjs-2": "^5.2.0",
         "react-dom": "18.2.0"
     },
     "devDependencies": {
