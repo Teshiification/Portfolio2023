@@ -1,6 +1,4 @@
 import React from 'react'
-import Seperator from '../components/seperator'
-import SkillSet from '../components/skillset'
 
 export default function Index() {
     return (
@@ -16,30 +14,18 @@ export default function Index() {
                 }}
             >
                 <div className="container left-0 my-80">
-                    <div className="flex items-center justify-center">
-                        <div className="w-full lg:w-3/4 justify-center font-bold">
-                            <h1 className="text-6xl text-vicious-white my-4">
-                                Danny Sinicco
-                            </h1>
-                            <p className="text-xl text-vicious-white mx-8 mb-8">
-                                Willkommen auf meinem Portfolio
-                            </p>
-                        </div>
+                    <div className="w-1/3 text-center font-bold ml-60">
+                        <h1 className="text-6xl text-vicious-white my-4">
+                            Danny Sinicco
+                        </h1>
+                        <p className="text-xl text-vicious-white mx-8 mb-8">
+                            Designer & Programmierer
+                        </p>
+                        <h2 className="text-2xl text-vicious-white mx-8 mb-8">
+                            Willkommen auf meinem Portfolio
+                        </h2>
                     </div>
                 </div>
-                <Seperator color={'#29323C'} className="rotate-180 bottom-0" />
-            </section>
-
-            <section
-                id="skills"
-                className="grid grid-rows w-screen bg-body"
-            ></section>
-
-            <section
-                id="projects"
-                className="grid grid-rows w-screen h-1/2 bg-vicious-primary"
-            >
-                <Seperator color={'#29323C'} />
             </section>
         </>
     )
