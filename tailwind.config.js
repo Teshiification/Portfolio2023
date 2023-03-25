@@ -1,9 +1,14 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme')
+const tailwindColorSafelist = require('./tailwind-color-safelist')
+
 module.exports = {
     content: [
         './components/**/*.{js,ts,jsx,tsx}',
         './app/**/*.{js,ts,jsx,tsx}',
     ],
+    safelist: tailwindColorSafelist,
     theme: {
         extend: {
             colors: {
@@ -15,6 +20,10 @@ module.exports = {
                     black: '#29323C',
                 },
                 body: '#29323C',
+            },
+            fontFamily: {
+                sora: ['"Sora"', ...defaultTheme.fontFamily.sans],
+                lobster: ['"Lobster"', ...defaultTheme.fontFamily.sans],
             },
             gradientColorStops: {
                 arendelle:
