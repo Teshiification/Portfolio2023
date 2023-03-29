@@ -9,7 +9,7 @@ const HallePage = () => {
         },
         {
             title: 'Shishaköpfe',
-            entries: [new Date(), new Date()],
+            entries: [new Date(), new Date(), new Date()],
         },
     ]
 
