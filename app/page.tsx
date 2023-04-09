@@ -39,7 +39,6 @@ export default function Index() {
             type: 'github',
         },
     ]
-
     return (
         <div className="grid gap-16">
             <section
@@ -107,16 +106,11 @@ export default function Index() {
                         />
                     </div>
                     <p className="text-vicious-white p-4 w-full h-full">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Culpa quibusdam itaque autem earum sint molestias
-                        cum sed id. Eius quam eligendi dolor eveniet sed enim ut
-                        quibusdam ipsam eos culpa.
+                        Seite noch in Bearbeitung
                     </p>
                 </div>
             </section>
-            <section id="projects" className="h-screen">
-                projects
-            </section>
+            <section id="projects" className="h-screen"></section>
         </div>
     )
 }

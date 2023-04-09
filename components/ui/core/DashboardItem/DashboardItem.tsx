@@ -4,7 +4,7 @@ import { FC, HTMLAttributes, MouseEventHandler, useState } from 'react'
 export interface DashboardItemProps
     extends JSX.IntrinsicAttributes,
         HTMLAttributes<HTMLElement> {
-    data?: { title?: string; entries?: Date[] }
+    data?: any
 }
 
 export const DashboardItem: FC<DashboardItemProps> = (
@@ -12,18 +12,18 @@ export const DashboardItem: FC<DashboardItemProps> = (
 ) => {
     props = {
         color: 'blue',
-        data: { title: 'noneTitle', entries: [] },
+        data: [],
         ...props,
     }
 
     return (
         <Link
-            href={`halle/${props.data?.title}`}
+            href={`halle/${props.data?.id}`}
             className={`relative h-24 w-24 p-2 rounded-lg cursor-pointer bg-vicious-gray select-none ${props.className}`}
         >
-            <p>{props.data?.entries?.length}</p>
+            <p>{props.data?.amount.length}</p>
             <p className="text-xs text-vicious-white text-opacity-60">
-                {props.data?.title}
+                {props.data?.name}
             </p>
         </Link>
     )
