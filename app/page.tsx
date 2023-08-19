@@ -1,24 +1,7 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Navbar from 'components/ui/core/Navbar/Navbar'
 import React from 'react'
-import Seperator from '../components/seperator'
 
 export default function Index() {
-    const pages = [
-        {
-            link: '/',
-            title: 'Home',
-        },
-        {
-            link: '#about',
-            title: 'About me',
-        },
-        {
-            link: '#projects',
-            title: 'Projects',
-        },
-    ]
-
     const projects = [
         {
             title: 'Portfolio 2023',
@@ -51,39 +34,7 @@ export default function Index() {
                     backgroundBlendMode: 'multiply',
                 }}
             >
-                <div
-                    id="navbar"
-                    className="absolute hidden lg:grid w-1/4 h-screen lg:right-20 top-0 bottom-0 bg-vicious-white bg-opacity-10 justify-around text-center font-semibold uppercase items-center"
-                >
-                    <div className="grid gap-10">
-                        {pages.map((item, key) => {
-                            return (
-                                <Link
-                                    key={key}
-                                    href={item.link}
-                                    className="group text-vicious-secondary hover:text-vicious-primary cursor-pointer"
-                                >
-                                    {item.title}
-                                    <div className="h-[1px] bg-vicious-white bg-opacity-60 group-hover:bg-opacity-40 rounded w-40"></div>
-                                </Link>
-                            )
-                        })}
-                    </div>
-                    <Link
-                        href={'#job'}
-                        className="h-8 w-48 text-vicious-secondary border-2 border-vicious-primary bg-white bg-opacity-20 rounded shadow-3xl hover:bg-opacity-40 cursor-pointer"
-                    >
-                        Hire me
-                    </Link>
-                </div>
-                <div className="grid left-0 my-20 ml-10 w-1/3 text-center font-bold gap-4">
-                    <h1 className="text-6xl text-vicious-white my-4">
-                        Danny Sinicco
-                    </h1>
-                    <p className="text-xl text-vicious-white mx-8 mb-8">
-                        Design & Programming
-                    </p>
-                </div>
+                <Navbar />
             </section>
 
             <section id="about" className="h-1/2">
