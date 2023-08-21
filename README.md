@@ -1,34 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+<!-- BACk TO TOP LINk -->
+<a name="readme-top"></a>
 
-First, run the development server:
+<center>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+<!-- PROJECT SHIELDS -->
+![GitHub forks](https://img.shields.io/github/forks/Teshiification/Portfolio2023)
+![GitHub Repo stars](https://img.shields.io/github/stars/Teshiification/Portfolio2023)
+![GitHub watchers](https://img.shields.io/github/watchers/Teshiification/Portfolio2023)
+![GitHub issues](https://img.shields.io/github/issues/Teshiification/Portfolio2023)
+![GitHub contributors](https://img.shields.io/github/contributors/Teshiification/Portfolio2023)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+</center>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<!-- PROJECT -->
+# <center>Portfolio 2023</center>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+<!-- TABLE OF CONTENTS -->
+<details>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<summary>Table of Contents</summary>
 
-## Learn More
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [Contribution](#contribution)
+- [License](#license)
 
-To learn more about Next.js, take a look at the following resources:
+</details>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<!-- Technologies -->
+## Technologies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+My Portfolio is based on modern web technologies and utilizes the following technology stack.
 
-## Deploy on Vercel
+### Frontend 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<a href="https://reactjs.org/" target="_blank"><img src="https://img.shields.io/badge/React-gray?logo=react&logoColor=%2361DAFB&labelColor=white&color=%2361DAFB"/> </a>
+<a href="https://tailwindcss.com/" target="_blank" ><img src="https://img.shields.io/badge/TawilwindCSS-gray?logo=tailwindcss&logoColor=%2306B6D4&labelColor=white&color=%2306B6D4"/></a>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<!-- Setup -->
+##  Setup
+
+Follow these steps to set up the repository on your local system
+
+### Tasklist
+1. Clone the repository: 
+    > *git clone https://github.com/Teshiification/Portfolio2023.git*
+2. Navigate to the project directory: 
+    > *cd Portfolio2023*
+3. Install the dependencies: 
+    > *npm install*
+4. Start the development server: 
+    > *npm run dev*
+
+<!-- Contribution -->
+##  Contribution
+
+We welcome contributions to the Arrival App. If you have suggestions for improving the app, please open an issue in this repository. If you would like to make changes, please submit a pull request and provide a detailed description of the proposed changes.
+
+<!-- License -->
+
+##  License 
+
+ ![Static Badge](https://img.shields.io/badge/MIT-green?label=LICENSE)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+ 
