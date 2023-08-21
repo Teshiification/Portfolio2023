@@ -25,8 +25,13 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
+# IDE
+.vscode
+.idea
+
 # local env files
 .env*.local
+.env
 
 # vercel
 .vercel

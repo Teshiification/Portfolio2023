@@ -1,10 +1,16 @@
+/* eslint-disable import/no-extraneous-dependencies */
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+});
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    experimental: {
-        appDir: true,
-    },
-    output: 'export',
-    distDir: 'dist',
-}
+  eslint: {
+    dirs: ['.'],
+  },
+  poweredByHeader: false,
+  trailingSlash: true,
+  reactStrictMode: true,
+};
 
-module.exports = nextConfig
+module.exports = withBundleAnalyzer(nextConfig);
