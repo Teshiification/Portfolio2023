@@ -3,6 +3,8 @@
 import Image from 'next/image';
 import type { FC, HTMLAttributes, MouseEventHandler } from 'react';
 
+import { cn } from '@/lib/utils';
+
 export interface AppButtonProps
   extends JSX.IntrinsicAttributes,
     HTMLAttributes<HTMLElement> {
@@ -24,33 +26,37 @@ export interface AppButtonProps
 }
 
 export const AppButton: FC<AppButtonProps> = (props: AppButtonProps) => {
-  props = {
+  const buttonProps = {
     color: 'blue',
     imgUrl: undefined,
     text: '',
-    onClick: () => {
-      console.log('click');
-    },
+    onClick: () => {},
     ...props,
   };
 
   return (
     <div
-      className={`group relative h-20 w-20 cursor-pointer rounded-lg ${props.className} select-none bg-slate-600`}
-      onClick={(event) => props.onClick}
+      className={`group relative h-20 w-20 cursor-pointer rounded-lg ${buttonProps.className} select-none bg-slate-600`}
+      onClick={() => buttonProps.onClick}
     >
       <div
-        className={`bg- absolute h-full w-full rounded-lg${props.color}-200 hover:bg-${props.color}-500 z-20 bg-opacity-40 group-hover:bg-opacity-60 group-active:bg-opacity-60`}
+        className={cn(
+          `bg- absolute h-full w-full rounded-lg z-20 bg-opacity-40 group-hover:bg-opacity-60 group-active:bg-opacity-60`,
+          `${buttonProps.color}-200 hover:bg-${buttonProps.color}-500`,
+        )}
       />
       <Image
-        src={props.imgUrl || '/images/halle.jpg'}
+        src={buttonProps.imgUrl || '/images/halle.jpg'}
         alt="Icon"
         fill
         object-fit="cover"
         className="rounded-lg"
       />
       <p
-        className={`text- relative -bottom-10 mt-10${props.color}-500 group-hover:text- text-center font-semibold uppercase${props.color}-200 group-active:text-${props.color}-200`}
+        className={cn(
+          `text- relative -bottom-10 mt-10 group-hover:text- text-center font-semibold uppercase`,
+          `${buttonProps.color}-500 ${buttonProps.color}-200 group-active:text-${buttonProps.color}-200`,
+        )}
       >
         {props.text}
       </p>

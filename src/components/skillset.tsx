@@ -1,3 +1,5 @@
+import { cn } from '@/lib/utils';
+
 import type { DoughnutChartProps } from './charts/doughnut';
 import { DoughnutChart } from './charts/doughnut';
 
@@ -43,7 +45,7 @@ export default function SkillSet(props: SkillSetProps) {
   };
 
   return (
-    <div className={`flex h-full justify-around ${props.className}`}>
+    <div className={cn('flex h-full justify-around', props.className)}>
       <DoughnutChart
         labels={webddevData.labels}
         datasets={webddevData.datasets}

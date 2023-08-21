@@ -1,32 +1,13 @@
-import Navbar from 'components/ui/core/Navbar/Navbar';
 import React from 'react';
 
+import { Navbar } from '@/components/ui/';
+
 export default function Index() {
-  const projects = [
-    {
-      title: 'Portfolio 2023',
-      text: 'My new Portfolio',
-      link: '',
-      type: 'github',
-    },
-    {
-      title: 'Portfolio 2020 - 2023',
-      text: 'My old Portfolio',
-      link: '',
-      type: 'github',
-    },
-    {
-      title: 'Portfolio Marcel Sturm',
-      text: 'Customer Portfolio',
-      link: '',
-      type: 'github',
-    },
-  ];
   return (
     <div className="grid gap-16">
       <section
         id="hero"
-        className="h-screen bg-vicious-black bg-opacity-60 pt-10"
+        className="h-screen bg-vicious-black/60 pt-10"
         style={{
           backgroundImage: `url(/images/portraits/landscape.jpg)`,
           backgroundSize: 'cover',

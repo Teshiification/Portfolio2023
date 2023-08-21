@@ -3,7 +3,9 @@
 import Link from 'next/link';
 import { useState } from 'react';
 
-const Navbar = () => {
+import { cn } from '@/lib/utils';
+
+export const Navbar = () => {
   const pages = [
     {
       link: '/',
@@ -22,7 +24,7 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
 
   return (
-    <>
+    <nav>
       <div
         hidden={showMenu}
         onClick={() => {
@@ -30,21 +32,22 @@ const Navbar = () => {
         }}
         className="absolute right-8 top-8 lg:hidden"
       >
-        <div className="grid-rows group grid gap-1">
-          <div className="h-1 w-8 rounded bg-vicious-white bg-opacity-60 group-hover:bg-opacity-40"></div>
-          <div className="h-1 w-12 rounded bg-vicious-white bg-opacity-60 group-hover:bg-opacity-40"></div>
-          <div className="h-1 w-6 rounded bg-vicious-white bg-opacity-60 group-hover:bg-opacity-40"></div>
+        <div className="group grid grid-rows-3 gap-1">
+          <div className="h-1 w-8 rounded bg-vicious-white/60 group-hover:bg-vicious-white/40"></div>
+          <div className="h-1 w-12 rounded bg-vicious-white/60 group-hover:bg-vicious-white/40"></div>
+          <div className="h-1 w-6 rounded bg-vicious-white/60 group-hover:bg-vicious-white/40"></div>
         </div>
       </div>
       <div
         id="navbar"
-        className={`absolute ${
-          showMenu || 'hidden'
-        } inset-y-0 h-screen w-full justify-around bg-vicious-gray bg-opacity-80 text-center font-semibold uppercase lg:right-20 lg:grid lg:w-1/4 lg:bg-vicious-white lg:bg-opacity-10`}
+        className={cn(
+          'absolute inset-y-0 h-screen w-full justify-around bg-vicious-gray/80 text-center font-semibold uppercase lg:right-20 lg:grid lg:w-1/4 lg:bg-vicious-white/10',
+          showMenu || 'hidden',
+        )}
       >
         <p
           hidden={!showMenu}
-          className="h-20 w-full bg-vicious-primary bg-opacity-20 align-middle text-xl font-semibold"
+          className="h-20 w-full bg-vicious-primary/20 align-middle text-xl font-semibold"
           onClick={() => {
             setShowMenu(false);
           }}
@@ -60,14 +63,14 @@ const Navbar = () => {
                 className="group cursor-pointer text-vicious-secondary hover:text-vicious-primary"
               >
                 {item.title}
-                <div className="h-[1px] w-full rounded bg-vicious-white bg-opacity-60 group-hover:bg-opacity-40"></div>
+                <div className="h-[1px] w-full rounded bg-vicious-white/60 group-hover:bg-vicious-white/40"></div>
               </Link>
             );
           })}
         </div>
         <Link
           href={'#contact'}
-          className="mt-10 flex h-8 w-48 cursor-pointer justify-center rounded border-2 border-vicious-primary bg-white bg-opacity-20 text-vicious-secondary shadow-3xl hover:bg-opacity-40 lg:mt-0"
+          className="mt-10 flex h-8 w-48 cursor-pointer justify-center rounded border-2 border-vicious-primary bg-white/20 text-vicious-secondary shadow-3xl hover:bg-white/40 lg:mt-0"
         >
           Contact me
         </Link>
@@ -78,8 +81,6 @@ const Navbar = () => {
           Fullstack Developer
         </p>
       </div>
-    </>
+    </nav>
   );
 };
-
-export default Navbar;

@@ -1,1 +1,1 @@
-export * from './DashboardItem'
+export * from './DashboardItem';

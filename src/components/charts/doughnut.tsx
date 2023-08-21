@@ -1,6 +1,7 @@
 'use client';
 
 import { ArcElement, Chart as ChartJS, Legend, Tooltip } from 'chart.js';
+import type { FC } from 'react';
 import React from 'react';
 import { Doughnut } from 'react-chartjs-2';
 
@@ -32,11 +33,6 @@ export interface DoughnutChartProps {
   }[];
 }
 
-export function DoughnutChart(data: DoughnutChartProps) {
-  const config = {
-    type: 'doughnut',
-    data,
-  };
-
+export const DoughnutChart: FC<DoughnutChartProps> = (data = exampleData) => {
   return <Doughnut data={data} />;
-}
+};
