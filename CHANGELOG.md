@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/Teshiification/Portfolio2023/compare/v1.4.0...v1.5.0) (2023-09-12)
+
+
+### Features
+
+* **modules:** update dependencies ([6ab1b78](https://github.com/Teshiification/Portfolio2023/commit/6ab1b782871cd747d77612119189e481db4fa9d3))
+
 # [1.4.0](https://github.com/Teshiification/Portfolio2023/compare/v1.3.0...v1.4.0) (2023-08-30)
 
 
