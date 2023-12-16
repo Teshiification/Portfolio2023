@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/Teshiification/Portfolio2023/compare/v1.6.0...v1.7.0) (2023-12-16)
+
+
+### Features
+
+* **deps:** update dependencies to the latest version ([2776c6c](https://github.com/Teshiification/Portfolio2023/commit/2776c6c038244ef1048b35e944414995ddfa1158))
+
 # [1.6.0](https://github.com/Teshiification/Portfolio2023/compare/v1.5.0...v1.6.0) (2023-09-22)
 
 
